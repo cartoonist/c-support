@@ -7,7 +7,7 @@
 § =============================================================
 
 § prefix used for Doxygen commands, '\' or '@'
-SetMacro( 'DOX_CMD', '\' )
+SetMacro( 'DOX_CMD', '@' )
 
 § URL of Doxygen online help
 SetMacro( 'HelpPathDoxygen', 'http://www.stack.nl/~dimitri/doxygen/commands.html' )
@@ -36,7 +36,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
 § "Doxygen.brief, after member", which is created by the plug-in itself.
 § Do not change the name!
 == Doxygen.brief, after member == append, nomenu ==
-/*!< |DOX_CMD|brief <CURSOR> */
+/**< |DOX_CMD|brief <CURSOR> */
 == ENDTEMPLATE ==
 
 == ENDSTYLES ==
@@ -52,7 +52,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
 //  <CURSOR>
 //-----------------------------------------------------------------------------
 == Comments.function == map:cfu, shortcut:f  ==
-/*!
+/**
  *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
  *
  *  |DOX_CMD|param  <+NAME+> <+DESCRIPTION+>
@@ -60,7 +60,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *  <+DETAILED+>
  */
 == Comments.method == map:cme, shortcut:m  ==
-/*!
+/**
  *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
  *
  *  |DOX_CMD|param  <+NAME+> <+DESCRIPTION+>
@@ -68,7 +68,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *  <+DETAILED+>
  */
 == Comments.class == map:ccl, shortcut:c  ==
-/*!
+/**
  *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
  *
  *  <+DETAILED+>
@@ -82,43 +82,39 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
 == SEP: Comments.sep_file ==
 
 == Comments.file description impl == map:cfdi, shortcut:c, start, noindent ==
-/*!
+/**
  *    |DOX_CMD|file  |FILENAME|
  *   |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
  *
  *  <+DETAILED+>
  *
- *  |DOX_CMD|author  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ *  |DOX_CMD|author  |AUTHOR| (|AUTHORREF|), <+EMAIL+>
  *
  *  |DOX_CMD|internal
  *       Created:  |DATE|
- *      Revision:  none
- *      Compiler:  gcc
  *  Organization:  |ORGANIZATION|
  *     Copyright:  |COPYRIGHT|
  *
- *  This source code is released for free distribution under the terms of the
- *  GNU General Public License as published by the Free Software Foundation.
+ *  This source code is released under the terms of the <+LICENSE+>.
+ *  See LICENSE file for more information.
  */
 
 == Comments.file description header == map:cfdh, shortcut:h, start, noindent ==
-/*!
+/**
  *    |DOX_CMD|file  |FILENAME|
  *   |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
  *
  *  <+DETAILED+>
  *
- *  |DOX_CMD|author  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ *  |DOX_CMD|author  |AUTHOR| (|AUTHORREF|), <+EMAIL+>
  *
  *  |DOX_CMD|internal
  *       Created:  |DATE|
- *      Revision:  none
- *      Compiler:  gcc
  *  Organization:  |ORGANIZATION|
  *     Copyright:  |COPYRIGHT|
  *
- *  This source code is released for free distribution under the terms of the
- *  GNU General Public License as published by the Free Software Foundation.
+ *  This source code is released under the terms of the <+LICENSE+>.
+ *  See LICENSE file for more information.
  */
 
 == Comments.C file sections  == expandmenu, append, map:ccs, shortcut:s ==
@@ -350,11 +346,11 @@ xrefitem
 § basic blocks
 
 == Doxygen.frame == below, map:dfr, sc:f ==
-/*!
+/**
  *  |DOX_CMD|brief  <CURSOR>
  */
 == Doxygen.overload block == below, map:dov, sc:o ==
-/*!
+/**
  *  |DOX_CMD|overload<CURSOR>
  */
 == ENDTEMPLATE ==
@@ -376,7 +372,7 @@ xrefitem
 § groups
 
 == Doxygen.defgroup block == below, map:ddg, sc:g ==
-/*!
+/**
  *  |DOX_CMD|defgroup |?DOXYGEN_GROUP| <CURSOR>
  *
  *  |DOX_CMD|brief    {+BRIEF+}
@@ -384,28 +380,28 @@ xrefitem
  *  {+DETAILED+}
  */
 == Doxygen.addtogroup blocks == below, noindent, map:dag, sc:g ==
-/*!
+/**
  *  |DOX_CMD|addtogroup <CURSOR>|?DOXYGEN_GROUP|
  *  |DOX_CMD|{
  */
 
 <SPLIT>
 
-/*!
+/**
  *  |DOX_CMD|}
  */
 == Doxygen.ingroup == below, map:dig, sc:g ==
  *  |DOX_CMD|ingroup <CURSOR>|?DOXYGEN_GROUP|
  *
 == Doxygen.member group blocks == below, noindent, map:dmg, sc:g ==
-/*!
+/**
  *  |DOX_CMD|name {+HEADER+}
  */
-/*! |DOX_CMD|{ */
+/** |DOX_CMD|{ */
 
 <SPLIT>
 
-/*! |DOX_CMD|} */
+/** |DOX_CMD|} */
 == ENDTEMPLATE ==
 
 == SEP: Doxygen.sep3 ==
@@ -432,7 +428,7 @@ xrefitem
 |PickList( 'Doxygen command', 'doxygen_page_cmd' )|
  *  |DOX_CMD||KEY|<CURSOR> |VALUE|
 == Doxygen.page block == below, map:dpb, sc:p ==
-/*!
+/**
  *  |DOX_CMD|page<CURSOR> {+REF+} {+TITLE+}
  */
 == ENDTEMPLATE ==

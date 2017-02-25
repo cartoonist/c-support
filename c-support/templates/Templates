@@ -16,7 +16,7 @@ SetMacro( 'EMAIL',        '' )
 SetMacro( 'ORGANIZATION', 'Max-Planck-Institut fuer Informatik' )
 SetMacro( 'COMPANY',      '' )
 SetMacro( 'COPYRIGHT',    'Copyright (c) |YEAR|, |AUTHOR|' )
-SetMacro( 'LICENSE',      'GNU General Public License' )
+SetMacro( 'LICENSE',      '' )
 
 SetFormat( 'DATE', '%x' )
 SetFormat( 'TIME', '%X' )
