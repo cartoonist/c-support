@@ -9,6 +9,14 @@
 "
 " ------------------------------------------------------------------------------
 "
+" Indentation without hard tabs
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+"
+" Enable folding
+set foldmethod=syntax
+"
 " Only do this when not done yet for this buffer
 " 
 if exists("b:did_C_ftplugin")
