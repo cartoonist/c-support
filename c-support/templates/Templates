@@ -22,7 +22,7 @@ SetFormat( 'DATE', '%x' )
 SetFormat( 'TIME', '%X' )
 SetFormat( 'YEAR', '%Y' )
 
-SetStyle( 'C' )
+SetStyle( 'Doxygen' )
 
 § ==========================================================
 §  File Includes and Shortcuts
