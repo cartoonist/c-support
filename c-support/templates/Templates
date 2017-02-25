@@ -10,10 +10,10 @@ InterfaceVersion ( '1.0' )
 §  Settings
 § ==========================================================
 
-SetMacro( 'AUTHOR',       'YOUR NAME' )
-SetMacro( 'AUTHORREF',    '' )
+SetMacro( 'AUTHOR',       'Ali Ghaffaari' )
+SetMacro( 'AUTHORREF',    '@cartoonist' )
 SetMacro( 'EMAIL',        '' )
-SetMacro( 'ORGANIZATION', '' )
+SetMacro( 'ORGANIZATION', 'Max-Planck-Institut fuer Informatik' )
 SetMacro( 'COMPANY',      '' )
 SetMacro( 'COPYRIGHT',    'Copyright (c) |YEAR|, |AUTHOR|' )
 SetMacro( 'LICENSE',      'GNU General Public License' )

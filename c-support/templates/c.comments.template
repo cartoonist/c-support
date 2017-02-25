@@ -46,17 +46,16 @@
 /*
  * =====================================================================================
  *
- *       Filename:  |FILENAME|
+ * Filename: |FILENAME|
  *
- *    Description:  <CURSOR>
+ * Created: |DATE|, |YEAR|  |TIME|
  *
- *        Version:  1.0
- *        Created:  |DATE| |TIME|
- *       Revision:  none
- *       Compiler:  gcc
+ * Description: <CURSOR>
  *
- *         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
- *   Organization:  |ORGANIZATION|
+ * |COPYRIGHT|
+ *
+ * Author: |AUTHOR| (|AUTHORREF|), |EMAIL|
+ * Organization: |ORGANIZATION|
  *
  * =====================================================================================
  */
@@ -65,17 +64,16 @@
 /*
  * =====================================================================================
  *
- *       Filename:  |FILENAME|
+ * Filename: |FILENAME|
  *
- *    Description:  <CURSOR>
+ * Created: |DATE|, |YEAR|  |TIME|
  *
- *        Version:  1.0
- *        Created:  |DATE| |TIME|
- *       Revision:  none
- *       Compiler:  gcc
+ * Description: <CURSOR>
  *
- *         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
- *   Organization:  |ORGANIZATION|
+ * |COPYRIGHT|
+ *
+ * Author: |AUTHOR| (|AUTHORREF|), |EMAIL|
+ * Organization: |ORGANIZATION|
  *
  * =====================================================================================
  */
