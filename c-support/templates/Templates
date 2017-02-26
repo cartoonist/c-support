@@ -18,8 +18,8 @@ SetMacro( 'COMPANY',      '' )
 SetMacro( 'COPYRIGHT',    'Copyright (c) |YEAR|, |AUTHOR|' )
 SetMacro( 'LICENSE',      '' )
 
-SetFormat( 'DATE', '%x' )
-SetFormat( 'TIME', '%X' )
+SetFormat( 'DATE', '%a %b %d' )
+SetFormat( 'TIME', '%H:%M' )
 SetFormat( 'YEAR', '%Y' )
 
 SetStyle( 'Doxygen' )
