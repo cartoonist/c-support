@@ -11,7 +11,7 @@ InterfaceVersion ( '1.0' )
 § ==========================================================
 
 SetMacro( 'AUTHOR',       'Ali Ghaffaari' )
-SetMacro( 'AUTHORREF',    '@cartoonist' )
+SetMacro( 'AUTHORREF',    '\@cartoonist' )
 SetMacro( 'EMAIL',        '' )
 SetMacro( 'ORGANIZATION', 'Max-Planck-Institut fuer Informatik' )
 SetMacro( 'COMPANY',      '' )
