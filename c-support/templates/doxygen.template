@@ -91,7 +91,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *  |DOX_CMD|author  |AUTHOR| (|AUTHORREF|), <+EMAIL+>
  *
  *  |DOX_CMD|internal
- *       Created:  |DATE|
+ *       Created:  |DATE|, |YEAR|  |TIME|
  *  Organization:  |ORGANIZATION|
  *     Copyright:  |COPYRIGHT|
  *
@@ -109,7 +109,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *  |DOX_CMD|author  |AUTHOR| (|AUTHORREF|), <+EMAIL+>
  *
  *  |DOX_CMD|internal
- *       Created:  |DATE|
+ *       Created:  |DATE|, |YEAR|  |TIME|
  *  Organization:  |ORGANIZATION|
  *     Copyright:  |COPYRIGHT|
  *
