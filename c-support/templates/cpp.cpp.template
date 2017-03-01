@@ -199,7 +199,7 @@ class |CLASSNAME|
 
 		// ====================  OPERATORS     ======================================= 
 
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator 
+    |CLASSNAME|& operator= ( const |CLASSNAME| &other ); // assignment operator 
 
   protected:
 		// ====================  METHODS       ======================================= 
@@ -264,7 +264,7 @@ class |CLASSNAME|
 
 		// ====================  OPERATORS     ======================================= 
 
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator 
+    |CLASSNAME|& operator= ( const |CLASSNAME| &other ); // assignment operator 
 
   protected:
 		// ====================  METHODS       ======================================= 
@@ -331,16 +331,16 @@ class |CLASSNAME|
 
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
-//      Method:  operator =
+//      Method:  operator=
 // Description:  assignment operator
 //--------------------------------------------------------------------------------------
 |CLASSNAME|&
-|CLASSNAME|::operator = ( const |CLASSNAME| &other )
+|CLASSNAME|::operator= ( const |CLASSNAME| &other )
 {
   if ( this != &other ) {
   }
   return *this;
-}  // -----  end of method |CLASSNAME|::operator =  (assignment operator)  ----- 
+}  // -----  end of method |CLASSNAME|::operator=  (assignment operator)  ----- 
 
 == C++.IMPLEMENTATION.method == map:+im , shortcut:m ==
 void<CURSOR>
@@ -416,11 +416,11 @@ template < class T >
 
 //--------------------------------------------------------------------------------------
 //       Class:  |CLASSNAME|
-//      Method:  operator =
+//      Method:  operator=
 // Description:  assignment operator
 //--------------------------------------------------------------------------------------
 template < class T >
-|CLASSNAME|< T >& |CLASSNAME|< T >::operator = ( const |CLASSNAME| &other )
+|CLASSNAME|< T >& |CLASSNAME|< T >::operator= ( const |CLASSNAME| &other )
 {
   return *this;
 }  // ----------  end of assignment operator of template class |CLASSNAME|  ---------- 
@@ -462,18 +462,18 @@ void<CURSOR> |?TEMPALTE_FUNCTION_NAME| ( <+argument_list+> )
 }		// -----  end of template function |?TEMPALTE_FUNCTION_NAME|  ----- 
 == C++.IMPLEMENTATION.operator, out == map:+ioo, shortcut:o ==
 ostream &
-operator << ( ostream &os, const |?CLASSNAME| &obj )
+operator<< ( ostream &os, const |?CLASSNAME| &obj )
 {
 	os << obj.<CURSOR> ;
 	return os;
-}		// -----  end of function operator <<  ----- 
+}		// -----  end of function operator<<  ----- 
 == C++.IMPLEMENTATION.operator, in == map:+ioi, shortcut:i ==
 istream &
-operator >> ( istream &is, |?CLASSNAME| &obj )
+operator>> ( istream &is, |?CLASSNAME| &obj )
 {
 	is >> obj.<CURSOR> ;
 	return is;
-}		// -----  end of function operator >>  ----- 
+}		// -----  end of function operator>>  ----- 
 == C++.try catch == map:+tr, shortcut:t ==
 try {
 <SPLIT>}
