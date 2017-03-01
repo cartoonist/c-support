@@ -57,6 +57,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *
  *  |DOX_CMD|param  <+NAME+> <+DESCRIPTION+>
  *  |DOX_CMD|return <+DESCRIPTION+>
+ *
  *  <+DETAILED+>
  */
 == Comments.method == map:cme, shortcut:m  ==
@@ -65,6 +66,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *
  *  |DOX_CMD|param  <+NAME+> <+DESCRIPTION+>
  *  |DOX_CMD|return <+DESCRIPTION+>
+ *
  *  <+DETAILED+>
  */
 == Comments.class == map:ccl, shortcut:c  ==
@@ -144,6 +146,51 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
 |DATE|<CURSOR>
 == Comments.date time == insert, map:ct, shortcut:t ==
 |DATE| |TIME|<CURSOR>
+== ENDTEMPLATE ==
+
+§ idioms
+
+== Idioms.function == map:if, shortcut:f  ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  |DOX_CMD|param  <+NAME+> <+DESCRIPTION+>
+ *  |DOX_CMD|return <+DESCRIPTION+>
+ *
+ *  <+DETAILED+>
+ */
+void
+|?FUNCTION_NAME| ( <+argument_list+> )
+{
+<SPLIT>	return <+return_value+>;
+}		/* -----  end of function |FUNCTION_NAME|  ----- */
+== Idioms.function-static == map:isf, shortcut:t  ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  |DOX_CMD|param  <+NAME+> <+DESCRIPTION+>
+ *  |DOX_CMD|return <+DESCRIPTION+>
+ *
+ *  <+DETAILED+>
+ */
+static void
+|?FUNCTION_NAME| ( <+argument_list+> )
+{
+<SPLIT>	return <+return_value+>;
+}		/* -----  end of static function |FUNCTION_NAME|  ----- */
+== Idioms.main == map:im, shortcut:m  ==
+#include	<cstdlib>
+
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  <+DETAILED+>
+ */
+int
+main ( int argc, char *argv[] )
+{
+<SPLIT>	return EXIT_SUCCESS;
+}				/* ----------  end of function main  ---------- */
 == ENDTEMPLATE ==
 
 == ENDSTYLES ==
