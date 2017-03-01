@@ -191,6 +191,348 @@ main ( int argc, char *argv[] )
 {
 <SPLIT>	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
+
+§ C++
+
+== C++.class == map:+c, shortcut:c ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  <+DETAILED+>
+ */
+class |?CLASSNAME:c|
+{
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+		|CLASSNAME| ();                             /* constructor */
+
+		/* ====================  ACCESSORS     ======================================= */
+
+		/* ====================  MUTATORS      ======================================= */
+
+		/* ====================  OPERATORS     ======================================= */
+
+	protected:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+	private:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+}; /* -----  end of class |CLASSNAME|  ----- */
+
+== C++.class using new == map:+cn, shortcut:n ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  <+DETAILED+>
+ */
+class |?CLASSNAME:c|
+{
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+		|CLASSNAME| ();                                /* constructor      */
+		|CLASSNAME| ( const |CLASSNAME| &other );      /* copy constructor */
+		|CLASSNAME| ( |CLASSNAME| &&other ) noexcept;  /* move constructor */
+		~|CLASSNAME| () noexcept;                      /* destructor       */
+
+		/* ====================  ACCESSORS     ======================================= */
+
+		/* ====================  MUTATORS      ======================================= */
+
+		/* ====================  OPERATORS     ======================================= */
+
+		|CLASSNAME|& operator= ( const |CLASSNAME| &other );      /* copy assignment operator */
+		|CLASSNAME|& operator= ( |CLASSNAME| &&other ) noexcept;  /* move assignment operator */
+
+	protected:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+	private:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+}; /* -----  end of class |CLASSNAME|  ----- */
+
+== C++.template class == map:+tc, shortcut:t ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+class |?CLASSNAME:c|
+{
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+		|CLASSNAME| ();                             /* constructor */
+
+		/* ====================  ACCESSORS     ======================================= */
+
+		/* ====================  MUTATORS      ======================================= */
+
+		/* ====================  OPERATORS     ======================================= */
+
+	protected:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+	private:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+}; /* ----------  end of template class |CLASSNAME|  ---------- */
+
+== C++.template class using new == map:+tcn, shortcut:n ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+class |?CLASSNAME:c|
+{
+	public:
+		// ====================  LIFECYCLE     =======================================
+		|CLASSNAME| ();                                /* constructor      */
+		|CLASSNAME| ( const |CLASSNAME| &other );      /* copy constructor */
+		|CLASSNAME| ( |CLASSNAME| &&other ) noexcept;  /* move constructor */
+		~|CLASSNAME| () noexcept;                      /* destructor       */
+
+		/* ====================  ACCESSORS     ======================================= */
+
+		/* ====================  MUTATORS      ======================================= */
+
+		/* ====================  OPERATORS     ======================================= */
+
+		|CLASSNAME|& operator= ( const |CLASSNAME| &other );      /* copy assignment operator */
+		|CLASSNAME|& operator= ( |CLASSNAME| &&other ) noexcept;  /* move assignment operator */
+
+	protected:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+	private:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+}; /* -----  end of template class |CLASSNAME|  ----- */
+
+== C++.error class == map:+ec, shortcut:e ==
+/**
+ *  |DOX_CMD|brief  |DESCRIPTION|<CURSOR>
+ *
+ *  <+DETAILED+>
+ */
+class |?CLASSNAME:c|
+{
+	public:	|CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
+		virtual ~|CLASSNAME| ( )  { }
+		virtual string what ( ) const throw ( )  { return message; }
+	protected:  string  message;
+}; /* -----  end of class |CLASSNAME|  ----- */
+
+== C++.IMPLEMENTATION.class == map:+ic , shortcut:c ==
+/**
+ *  |DOX_CMD|brief  |?CLASSNAME:c| constructor.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|::|CLASSNAME| ()
+{<CURSOR>
+}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
+
+== C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
+/**
+ *  |DOX_CMD|brief  |?CLASSNAME:c| constructor.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|::|CLASSNAME| ()
+{<CURSOR>
+}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| copy constructor.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|::|CLASSNAME| ( const |CLASSNAME| &other )
+{
+}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (copy constructor)  ----- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| move constructor.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|::|CLASSNAME| ( |CLASSNAME| &&other ) noexcept
+{
+}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (move constructor)  ----- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| destructor.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|::~|CLASSNAME| () noexcept
+{
+}  /* -----  end of method |CLASSNAME|::~|CLASSNAME|  (destructor)  ----- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| copy assignment operator.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|&
+|CLASSNAME|::operator= ( const |CLASSNAME| &other )
+{
+	if ( this != &other ) {
+	}
+	return *this;
+}  /* -----  end of method |CLASSNAME|::operator=  (copy assignment operator)  ----- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| move assignment operator.
+ *
+ *  <+DETAILED+>
+ */
+|CLASSNAME|&
+|CLASSNAME|::operator= ( |CLASSNAME| &&other ) noexcept
+{
+	if ( this != &other ) {
+	}
+	return *this;
+}  /* -----  end of method |CLASSNAME|::operator=  (move assignment operator)  ----- */
+
+== C++.IMPLEMENTATION.accessor == map:+ia , shortcut:a ==
+/**
+ *  |DOX_CMD|brief  getter function for |?ATTRIBUTE|.
+ */
+inline |?RETURNTYPE|
+|?CLASSNAME|::get_|ATTRIBUTE| (  ) const
+{
+	return |ATTRIBUTE|;
+}		/* -----  end of method |CLASSNAME|::get_|ATTRIBUTE|  ----- */
+
+/**
+ *  |DOX_CMD|brief  setter function for |ATTRIBUTE|.
+ */
+inline void
+|CLASSNAME|::set_|ATTRIBUTE| ( |RETURNTYPE| value )
+{
+	|ATTRIBUTE|	= value;
+	return ;
+}		/* -----  end of method |CLASSNAME|::set_|ATTRIBUTE|  ----- */
+<CURSOR>
+== C++.IMPLEMENTATION.template class == map:+itc , shortcut:c ==
+/**
+ *  |DOX_CMD|brief  |?CLASSNAME:c| constructor.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME| < T >::|CLASSNAME| ()
+{<CURSOR>
+}  /* ----------  end of constructor of template class |CLASSNAME|  ---------- */
+
+== C++.IMPLEMENTATION.template class using new == map:+itcn , shortcut:n ==
+/**
+ *  |DOX_CMD|brief  |?CLASSNAME:c| constructor.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME|< T >::|CLASSNAME| ()
+{<CURSOR>
+}  /* ----------  end of constructor of template class |CLASSNAME|  ---------- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| copy constructor.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME|< T >::|CLASSNAME| ( const |CLASSNAME| &other )
+{
+}  /* ----------  end of copy constructor of template class |CLASSNAME|  ---------- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| move constructor.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME|< T >::|CLASSNAME| ( |CLASSNAME| &&other ) noexcept
+{
+}  /* ----------  end of move constructor of template class |CLASSNAME|  ---------- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| destructor.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME|< T >::~|CLASSNAME| () noexcept
+{
+}  /* ----------  end of destructor of template class |CLASSNAME|  ---------- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| copy assignment operator.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME|< T >& |CLASSNAME|< T >::operator= ( const |CLASSNAME| &other )
+{
+	if ( this != &other ) {
+	}
+	return *this;
+}  /* ----------  end of copy assignment operator of template class |CLASSNAME|  ---------- */
+
+/**
+ *  |DOX_CMD|brief  |CLASSNAME| move assignment operator.
+ *
+ *  <+DETAILED+>
+ */
+template < class T >
+|CLASSNAME|< T >& |CLASSNAME|< T >::operator= ( |CLASSNAME| &&other ) noexcept
+{
+	if ( this != &other ) {
+	}
+	return *this;
+}  /* ----------  end of move assignment operator of template class |CLASSNAME|  ---------- */
+
+== C++.IMPLEMENTATION.template accessor == map:+ita , shortcut:a ==
+/**
+ *  |DOX_CMD|brief  getter function for |?ATTRIBUTE|.
+ */
+template < class T >
+inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE| (  ) const
+{
+	return |ATTRIBUTE|;
+}		/* -----  end of method |CLASSNAME|<T>::get_|ATTRIBUTE|  ----- */
+
+/**
+ *  |DOX_CMD|brief  setter function for |ATTRIBUTE|.
+ */
+template < class T >
+inline  void |CLASSNAME|<T>::set_|ATTRIBUTE| ( |RETURNTYPE| value )
+{
+	|ATTRIBUTE|	= value;
+	return ;
+}		/* -----  end of method |CLASSNAME|<T>::set_|ATTRIBUTE|  ----- */
+
 == ENDTEMPLATE ==
 
 == ENDSTYLES ==
