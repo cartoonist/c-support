@@ -142,34 +142,34 @@
 == Preprocessor.if-endif == map:pif, shortcut:i ==
 #if  |?CONDITION:u|
 <CURSOR><SPLIT>
-#endif     /* -----  |CONDITION|  ----- */
+#endif  /* -----  |CONDITION|  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.if-else-endif == map:pie, shortcut:i ==
 #if  |?CONDITION:u|
 <CURSOR><SPLIT>
 #else      /* -----  not |CONDITION|  ----- */
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif  /* -----  not |CONDITION|  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.ifdef-else-endif == map:pid, shortcut:f ==
 #ifdef  |?CONDITION:u|
 <CURSOR><SPLIT>
 #else      /* -----  not |CONDITION|  ----- */
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif  /* -----  not |CONDITION|  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.ifndef-else-endif == map:pin, shortcut:n ==
 #ifndef  |?CONDITION:u|
 <CURSOR><SPLIT>
 #else      /* -----  not |CONDITION|  ----- */
 <+ELSE PART+>
-#endif     /* -----  not |CONDITION|  ----- */
+#endif  /* -----  not |CONDITION|  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.ifndef-def-endif == map:pind, shortcut:e ==
 #ifndef  |?BASENAME:u|_H__
 #define  |BASENAME:u|_H__
 <CURSOR><SPLIT>
-#endif   /* ----- #ifndef |BASENAME:u|_H__  ----- */
+#endif  /* ----- #ifndef |BASENAME:u|_H__  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.error == map:pe, shortcut:o ==
 #error	"<CURSOR>"			/*  */

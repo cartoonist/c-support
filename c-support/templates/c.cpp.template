@@ -180,7 +180,7 @@ class |CLASSNAME|
 
 		/* ====================  DATA MEMBERS  ======================================= */
 
-}; /* -----  end of class |CLASSNAME|  ----- */
+};  /* -----  end of class |CLASSNAME|  ----- */
 
 == C++.class using new == map:+cn, shortcut:n ==
 /*
@@ -217,7 +217,7 @@ class |CLASSNAME|
 
 		/* ====================  DATA MEMBERS  ======================================= */
 
-}; /* -----  end of class |CLASSNAME|  ----- */
+};  /* -----  end of class |CLASSNAME|  ----- */
 
 == C++.template class == map:+tc, shortcut:t ==
 /*
@@ -249,7 +249,7 @@ class |CLASSNAME|
 
 		/* ====================  DATA MEMBERS  ======================================= */
 
-}; /* ----------  end of template class |CLASSNAME|  ---------- */
+};  /* ----------  end of template class |CLASSNAME|  ---------- */
 
 == C++.template class using new == map:+tcn, shortcut:n ==
 /* 
@@ -287,7 +287,7 @@ class |CLASSNAME|
 
 		/* ====================  DATA MEMBERS  ======================================= */
 
-}; /* -----  end of template class |CLASSNAME|  ----- */
+};  /* -----  end of template class |CLASSNAME|  ----- */
 
 == C++.error class == map:+ec, shortcut:e ==
 /*
@@ -298,11 +298,11 @@ class |CLASSNAME|
  */
 class |CLASSNAME|
 {
-	public:	|CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
+	public:  |CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
 		virtual ~|CLASSNAME| ( )  { }
 		virtual string what ( ) const throw ( )  { return message; }
 	protected:  string  message;
-}; /* -----  end of class |CLASSNAME|  ----- */
+};  /* -----  end of class |CLASSNAME|  ----- */
 
 == C++.IMPLEMENTATION.class == map:+ic , shortcut:c ==
 /*
@@ -396,7 +396,7 @@ void<CURSOR>
 |?CLASSNAME|::|?METHODNAME| ( <+argument_list+> )
 {
 	return ;
-}		/* -----  end of method |CLASSNAME|::|?METHODNAME|  ----- */
+}  /* -----  end of method |CLASSNAME|::|?METHODNAME|  ----- */
 
 == C++.IMPLEMENTATION.accessor == map:+ia , shortcut:a ==
 /*
@@ -409,7 +409,7 @@ inline |?RETURNTYPE|
 |CLASSNAME|::get_|ATTRIBUTE| (  ) const
 {
 	return |ATTRIBUTE|;
-}		/* -----  end of method |CLASSNAME|::get_|ATTRIBUTE|  ----- */
+}  /* -----  end of method |CLASSNAME|::get_|ATTRIBUTE|  ----- */
 
 /*
  *--------------------------------------------------------------------------------------
@@ -420,9 +420,9 @@ inline |?RETURNTYPE|
 inline void
 |CLASSNAME|::set_|ATTRIBUTE| ( |RETURNTYPE| value )
 {
-	|ATTRIBUTE|	= value;
+	|ATTRIBUTE| = value;
 	return ;
-}		/* -----  end of method |CLASSNAME|::set_|ATTRIBUTE|  ----- */
+}  /* -----  end of method |CLASSNAME|::set_|ATTRIBUTE|  ----- */
 <CURSOR>
 == C++.IMPLEMENTATION.template class == map:+itc , shortcut:c ==
 /*
@@ -521,7 +521,7 @@ template < class T >
 void<CURSOR> |?CLASSNAME|<T>::|?METHODNAME| ( <+argument_list+> )
 {
 	return ;
-}		/* -----  end of method |CLASSNAME|<T>::|METHODNAME|  ----- */
+}  /* -----  end of method |CLASSNAME|<T>::|METHODNAME|  ----- */
 
 == C++.IMPLEMENTATION.template accessor == map:+ita , shortcut:a ==
 /*
@@ -534,7 +534,7 @@ template < class T >
 inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE| (  ) const
 {
 	return |ATTRIBUTE|;
-}		/* -----  end of method |CLASSNAME|<T>::get_|ATTRIBUTE|  ----- */
+}  /* -----  end of method |CLASSNAME|<T>::get_|ATTRIBUTE|  ----- */
 
 /*
  *--------------------------------------------------------------------------------------
@@ -545,43 +545,43 @@ inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE| (  ) const
 template < class T >
 inline  void |CLASSNAME|<T>::set_|ATTRIBUTE| ( |RETURNTYPE| value )
 {
-	|ATTRIBUTE|	= value;
+	|ATTRIBUTE| = value;
 	return ;
-}		/* -----  end of method |CLASSNAME|<T>::set_|ATTRIBUTE|  ----- */
+}  /* -----  end of method |CLASSNAME|<T>::set_|ATTRIBUTE|  ----- */
 
 == C++.template function == map:+tf, shortcut:f ==
 template <class T>
 void<CURSOR> |?TEMPALTE_FUNCTION_NAME| ( <+argument_list+> )
 {
 	return ;
-}		/* -----  end of template function |?TEMPALTE_FUNCTION_NAME|  ----- */
+}  /* -----  end of template function |?TEMPALTE_FUNCTION_NAME|  ----- */
 == C++.IMPLEMENTATION.operator, out == map:+ioo, shortcut:o ==
 ostream &
 operator<< ( ostream &os, const |?CLASSNAME| &obj )
 {
 	os << obj.<CURSOR> ;
 	return os;
-}		/* -----  end of function operator<<  ----- */
+}  /* -----  end of function operator<<  ----- */
 == C++.IMPLEMENTATION.operator, in == map:+ioi, shortcut:i ==
 istream &
 operator>> ( istream &is, |?CLASSNAME| &obj )
 {
 	is >> obj.<CURSOR> ;
 	return is;
-}		/* -----  end of function operator>>  ----- */
+}  /* -----  end of function operator>>  ----- */
 == C++.try catch == map:+tr, shortcut:t ==
 try {
 <SPLIT>}
-catch ( const <CURSOR> &ExceptObj ) {		/* handle exception: */
+catch ( const <CURSOR> &ExceptObj ) {  /* handle exception: */
 }
-catch (...) {		/* handle exception: unspecified */
+catch (...) {  /* handle exception: unspecified */
 }
 
 == C++.catch == map:+ca, shortcut:c ==
-catch ( const <CURSOR> &ExceptObj ) {		/* handle exception: */
+catch ( const <CURSOR> &ExceptObj ) {  /* handle exception: */
 <SPLIT>}
 == C++.catch all == map:+caa, shortcut:c ==
-catch (...) {		/* handle exception: unspecified */
+catch (...) {  /* handle exception: unspecified */
 <SPLIT>}
 == C++.extern C == map:+ex, shortcut:x ==
 extern "C" {<CURSOR>
@@ -614,9 +614,9 @@ using namespace std;
 using namespace |?NAMESPACE|;
 == C++.namespace block xxx == map:+unb, shortcut:b ==
 namespace |?NAMESPACE| {<CURSOR>
-<SPLIT>}		/* -----  end of namespace |NAMESPACE|  ----- */
+<SPLIT>}  /* -----  end of namespace |NAMESPACE|  ----- */
 == C++.namespace alias == map:+na, shortcut:a ==
-namespace |?NAMESPACE_ALIAS|	= {-original_namespace_name-};
+namespace |?NAMESPACE_ALIAS| = {-original_namespace_name-};
 == ENDTEMPLATE ==
 
 == LIST: rtti == list ==

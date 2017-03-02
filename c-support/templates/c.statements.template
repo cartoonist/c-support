@@ -62,7 +62,7 @@ switch ( <CURSOR> ) {
 
 	default:	
 		break;
-}				/* -----  end switch  ----- */
+}  /* -----  end switch  ----- */
 == Statements.case == map:sc, shortcut:c  ==
 case <CURSOR>:	
 break;
