@@ -18,7 +18,7 @@ for ( <CURSOR>: <-EXPRESSION-> ) {
 <SPLIT>}
 == Statements.do while == map:sd, shortcut:d  ==
 do {
-<SPLIT>} while ( <CURSOR> );				/* -----  end do-while  ----- */
+<SPLIT>} while ( <CURSOR> );        /* -----  end do-while  ----- */
 == Statements.while == map:sw, shortcut:w  ==
 while ( <CURSOR> ) {
 <SPLIT>}
