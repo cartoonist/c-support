@@ -161,24 +161,24 @@ ios::|PICK|<CURSOR>
 class |CLASSNAME|
 {
 	public:
-		/* ====================  LIFECYCLE     ======================================= */
+		/* === LIFECYCLE === */
 		|CLASSNAME| ();                             /* constructor */
 
-		/* ====================  ACCESSORS     ======================================= */
+		/* === ACCESSORS === */
 
-		/* ====================  MUTATORS      ======================================= */
+		/* === MUTATORS === */
 
-		/* ====================  OPERATORS     ======================================= */
+		/* === OPERATORS === */
 
 	protected:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 	private:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 };  /* -----  end of class |CLASSNAME|  ----- */
 
@@ -192,30 +192,30 @@ class |CLASSNAME|
 class |CLASSNAME|
 {
 	public:
-		/* ====================  LIFECYCLE     ======================================= */
+		/* === LIFECYCLE === */
 		|CLASSNAME| ();                                /* constructor      */
 		|CLASSNAME| ( const |CLASSNAME| &other );      /* copy constructor */
 		|CLASSNAME| ( |CLASSNAME| &&other ) noexcept;  /* move constructor */
 		~|CLASSNAME| () noexcept;                      /* destructor       */
 
-		/* ====================  ACCESSORS     ======================================= */
+		/* === ACCESSORS === */
 
-		/* ====================  MUTATORS      ======================================= */
+		/* === MUTATORS === */
 
-		/* ====================  OPERATORS     ======================================= */
+		/* === OPERATORS === */
 
 		|CLASSNAME|& operator= ( const |CLASSNAME| &other );      /* copy assignment operator */
 		|CLASSNAME|& operator= ( |CLASSNAME| &&other ) noexcept;  /* move assignment operator */
 
 	protected:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 	private:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 };  /* -----  end of class |CLASSNAME|  ----- */
 
@@ -230,24 +230,24 @@ template < class T >
 class |CLASSNAME|
 {
 	public:
-		/* ====================  LIFECYCLE     ======================================= */
+		/* === LIFECYCLE === */
 		|CLASSNAME| ();                             /* constructor */
 
-		/* ====================  ACCESSORS     ======================================= */
+		/* === ACCESSORS === */
 
-		/* ====================  MUTATORS      ======================================= */
+		/* === MUTATORS === */
 
-		/* ====================  OPERATORS     ======================================= */
+		/* === OPERATORS === */
 
 	protected:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 	private:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 };  /* ----------  end of template class |CLASSNAME|  ---------- */
 
@@ -262,30 +262,30 @@ template < class T >
 class |CLASSNAME|
 {
 	public:
-		// ====================  LIFECYCLE     =======================================
+		/* === LIFECYCLE === */
 		|CLASSNAME| ();                                /* constructor      */
 		|CLASSNAME| ( const |CLASSNAME| &other );      /* copy constructor */
 		|CLASSNAME| ( |CLASSNAME| &&other ) noexcept;  /* move constructor */
 		~|CLASSNAME| () noexcept;                      /* destructor       */
 
-		/* ====================  ACCESSORS     ======================================= */
+		/* === ACCESSORS === */
 
-		/* ====================  MUTATORS      ======================================= */
+		/* === MUTATORS === */
 
-		/* ====================  OPERATORS     ======================================= */
+		/* === OPERATORS === */
 
 		|CLASSNAME|& operator= ( const |CLASSNAME| &other );      /* copy assignment operator */
 		|CLASSNAME|& operator= ( |CLASSNAME| &&other ) noexcept;  /* move assignment operator */
 
 	protected:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 	private:
-		/* ====================  METHODS       ======================================= */
+		/* === METHODS === */
 
-		/* ====================  DATA MEMBERS  ======================================= */
+		/* === DATA MEMBERS === */
 
 };  /* -----  end of template class |CLASSNAME|  ----- */
 

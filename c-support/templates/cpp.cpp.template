@@ -159,24 +159,24 @@ ios::|PICK|<CURSOR>
 class |CLASSNAME|
 {
 	public:
-		// ====================  LIFECYCLE     ======================================= 
+		// === LIFECYCLE ===
 		|CLASSNAME| ();                             // constructor 
 
-		// ====================  ACCESSORS     ======================================= 
+		// === ACCESSORS ===
 
-		// ====================  MUTATORS      ======================================= 
+		// === MUTATORS ===
 
-		// ====================  OPERATORS     ======================================= 
+		// === OPERATORS ===
 
 	protected:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-		// ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
 	private:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-		// ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
 }; // -----  end of class |CLASSNAME|  ----- 
 
@@ -188,28 +188,28 @@ class |CLASSNAME|
 class |CLASSNAME|
 {
   public:
-    // ====================  LIFECYCLE     ======================================= 
-    |CLASSNAME| ();                             // constructor      
-    |CLASSNAME| ( const |CLASSNAME| &other );   // copy constructor 
-    ~|CLASSNAME| ();                            // destructor       
+		// === LIFECYCLE ===
+		|CLASSNAME| ();                             // constructor      
+		|CLASSNAME| ( const |CLASSNAME| &other );   // copy constructor 
+		~|CLASSNAME| ();                            // destructor       
 
-		// ====================  ACCESSORS     ======================================= 
+		// === ACCESSORS ===
 
-		// ====================  MUTATORS      ======================================= 
+		// === MUTATORS ===
 
-		// ====================  OPERATORS     ======================================= 
+		// === OPERATORS ===
 
-    |CLASSNAME|& operator= ( const |CLASSNAME| &other ); // assignment operator 
+		|CLASSNAME|& operator= ( const |CLASSNAME| &other ); // assignment operator 
 
   protected:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-		// ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
   private:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-		// ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
 }; // -----  end of class |CLASSNAME|  ----- 
 
@@ -222,24 +222,24 @@ template < class T >
 class |CLASSNAME|
 {
   public:
-    // ====================  LIFECYCLE     ======================================= 
-    |CLASSNAME| ();                             // constructor 
+		// === LIFECYCLE ===
+		|CLASSNAME| ();                             // constructor 
 
-		// ====================  ACCESSORS     ======================================= 
+		// === ACCESSORS ===
 
-		// ====================  MUTATORS      ======================================= 
+		// === MUTATORS ===
 
-		// ====================  OPERATORS     ======================================= 
+		// === OPERATORS ===
 
   protected:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-    // ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
   private:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-    // ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
 }; // ----------  end of template class |CLASSNAME|  ---------- 
 
@@ -253,28 +253,28 @@ template < class T >
 class |CLASSNAME|
 {
   public:
-    // ====================  LIFECYCLE     =======================================
-    |CLASSNAME| ();                           // constructor      
-    |CLASSNAME| ( const |CLASSNAME| &other ); // copy constructor 
-    ~|CLASSNAME| ();                          // destructor       
+		// === LIFECYCLE ===
+		|CLASSNAME| ();                           // constructor      
+		|CLASSNAME| ( const |CLASSNAME| &other ); // copy constructor 
+		~|CLASSNAME| ();                          // destructor       
 
-		// ====================  ACCESSORS     ======================================= 
+		// === ACCESSORS ===
 
-		// ====================  MUTATORS      ======================================= 
+		// === MUTATORS ===
 
-		// ====================  OPERATORS     ======================================= 
+		// === OPERATORS ===
 
     |CLASSNAME|& operator= ( const |CLASSNAME| &other ); // assignment operator 
 
   protected:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-    // ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
   private:
-		// ====================  METHODS       ======================================= 
+		// === METHODS ===
 
-    // ====================  DATA MEMBERS  ======================================= 
+		// === DATA MEMBERS ===
 
 }; // -----  end of template class |CLASSNAME|  ----- 
 
