@@ -160,7 +160,7 @@ SetProperty( 'Doxygen::BriefAM::Map',  'dba' )
  *  <+DETAILED+>
  */
 void
-|?FUNCTION_NAME| ( <+argument_list+> )
+|?FUNCTION_NAME|( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }  /* -----  end of function |FUNCTION_NAME|  ----- */
@@ -174,7 +174,7 @@ void
  *  <+DETAILED+>
  */
 static void
-|?FUNCTION_NAME| ( <+argument_list+> )
+|?FUNCTION_NAME|( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }  /* -----  end of static function |FUNCTION_NAME|  ----- */
@@ -187,7 +187,7 @@ static void
  *  <+DETAILED+>
  */
 int
-main ( int argc, char *argv[] )
+main( int argc, char *argv[] )
 {
 <SPLIT>	return EXIT_SUCCESS;
 }  /* ----------  end of function main  ---------- */
@@ -204,7 +204,7 @@ class |?CLASSNAME:c|
 {
 	public:
 		/* === LIFECYCLE === */
-		|CLASSNAME| ();                             /* constructor */
+		|CLASSNAME|();                             /* constructor */
 
 		/* === ACCESSORS === */
 
@@ -234,10 +234,10 @@ class |?CLASSNAME:c|
 {
 	public:
 		/* === LIFECYCLE === */
-		|CLASSNAME| ();                                /* constructor      */
-		|CLASSNAME| ( const |CLASSNAME| &other );      /* copy constructor */
-		|CLASSNAME| ( |CLASSNAME| &&other ) noexcept;  /* move constructor */
-		~|CLASSNAME| () noexcept;                      /* destructor       */
+		|CLASSNAME|();                                /* constructor      */
+		|CLASSNAME|( |CLASSNAME| const& other );      /* copy constructor */
+		|CLASSNAME|( |CLASSNAME|&& other ) noexcept;  /* move constructor */
+		~|CLASSNAME|() noexcept;                      /* destructor       */
 
 		/* === ACCESSORS === */
 
@@ -245,8 +245,8 @@ class |?CLASSNAME:c|
 
 		/* === OPERATORS === */
 
-		|CLASSNAME|& operator= ( const |CLASSNAME| &other );      /* copy assignment operator */
-		|CLASSNAME|& operator= ( |CLASSNAME| &&other ) noexcept;  /* move assignment operator */
+		|CLASSNAME|& operator=( |CLASSNAME| const& other );      /* copy assignment operator */
+		|CLASSNAME|& operator=( |CLASSNAME|&& other ) noexcept;  /* move assignment operator */
 
 	protected:
 		/* === METHODS === */
@@ -266,12 +266,12 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-template < class T >
+template< class T >
 class |?CLASSNAME:c|
 {
 	public:
 		/* === LIFECYCLE === */
-		|CLASSNAME| ();                             /* constructor */
+		|CLASSNAME|();                             /* constructor */
 
 		/* === ACCESSORS === */
 
@@ -297,15 +297,15 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-template < class T >
+template< class T >
 class |?CLASSNAME:c|
 {
 	public:
 		/* === LIFECYCLE === */
-		|CLASSNAME| ();                                /* constructor      */
-		|CLASSNAME| ( const |CLASSNAME| &other );      /* copy constructor */
-		|CLASSNAME| ( |CLASSNAME| &&other ) noexcept;  /* move constructor */
-		~|CLASSNAME| () noexcept;                      /* destructor       */
+		|CLASSNAME|();                                /* constructor      */
+		|CLASSNAME|( |CLASSNAME| const& other );      /* copy constructor */
+		|CLASSNAME|( |CLASSNAME|&& other ) noexcept;  /* move constructor */
+		~|CLASSNAME|() noexcept;                      /* destructor       */
 
 		/* === ACCESSORS === */
 
@@ -313,8 +313,8 @@ class |?CLASSNAME:c|
 
 		/* === OPERATORS === */
 
-		|CLASSNAME|& operator= ( const |CLASSNAME| &other );      /* copy assignment operator */
-		|CLASSNAME|& operator= ( |CLASSNAME| &&other ) noexcept;  /* move assignment operator */
+		|CLASSNAME|& operator=( |CLASSNAME| const& other );      /* copy assignment operator */
+		|CLASSNAME|& operator=( |CLASSNAME|&& other ) noexcept;  /* move assignment operator */
 
 	protected:
 		/* === METHODS === */
@@ -336,9 +336,9 @@ class |?CLASSNAME:c|
  */
 class |?CLASSNAME:c|
 {
-	public:  |CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
-		virtual ~|CLASSNAME| ( )  { }
-		virtual string what ( ) const throw ( )  { return message; }
+	public:  |CLASSNAME|( string msg = "|CLASSNAME|" ):message(msg)  { }
+		virtual ~|CLASSNAME|( )  { }
+		virtual string what( ) const throw( )  { return message; }
 	protected:  string  message;
 };  /* -----  end of class |CLASSNAME|  ----- */
 
@@ -348,7 +348,7 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-|CLASSNAME|::|CLASSNAME| ()
+|CLASSNAME|::|CLASSNAME|()
 {<CURSOR>
 }  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
 
@@ -358,7 +358,7 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-|CLASSNAME|::|CLASSNAME| ()
+|CLASSNAME|::|CLASSNAME|()
 {<CURSOR>
 }  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
 
@@ -367,7 +367,7 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-|CLASSNAME|::|CLASSNAME| ( const |CLASSNAME| &other )
+|CLASSNAME|::|CLASSNAME|( |CLASSNAME| const& other )
 {
 }  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (copy constructor)  ----- */
 
@@ -376,7 +376,7 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-|CLASSNAME|::|CLASSNAME| ( |CLASSNAME| &&other ) noexcept
+|CLASSNAME|::|CLASSNAME|( |CLASSNAME|&& other ) noexcept
 {
 }  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (move constructor)  ----- */
 
@@ -385,7 +385,7 @@ class |?CLASSNAME:c|
  *
  *  <+DETAILED+>
  */
-|CLASSNAME|::~|CLASSNAME| () noexcept
+|CLASSNAME|::~|CLASSNAME|() noexcept
 {
 }  /* -----  end of method |CLASSNAME|::~|CLASSNAME|  (destructor)  ----- */
 
@@ -395,7 +395,7 @@ class |?CLASSNAME:c|
  *  <+DETAILED+>
  */
 |CLASSNAME|&
-|CLASSNAME|::operator= ( const |CLASSNAME| &other )
+|CLASSNAME|::operator=( |CLASSNAME| const& other )
 {
 	if ( this != &other ) {
 	}
@@ -408,7 +408,7 @@ class |?CLASSNAME:c|
  *  <+DETAILED+>
  */
 |CLASSNAME|&
-|CLASSNAME|::operator= ( |CLASSNAME| &&other ) noexcept
+|CLASSNAME|::operator=( |CLASSNAME|&& other ) noexcept
 {
 	if ( this != &other ) {
 	}
@@ -420,7 +420,7 @@ class |?CLASSNAME:c|
  *  |DOX_CMD|brief  getter function for |?ATTRIBUTE|.
  */
 inline |?RETURNTYPE|
-|?CLASSNAME|::get_|ATTRIBUTE| (  ) const
+|?CLASSNAME|::get_|ATTRIBUTE|(  ) const
 {
 	return |ATTRIBUTE|;
 }  /* -----  end of method |CLASSNAME|::get_|ATTRIBUTE|  ----- */
@@ -429,7 +429,7 @@ inline |?RETURNTYPE|
  *  |DOX_CMD|brief  setter function for |ATTRIBUTE|.
  */
 inline void
-|CLASSNAME|::set_|ATTRIBUTE| ( |RETURNTYPE| value )
+|CLASSNAME|::set_|ATTRIBUTE|( |RETURNTYPE| value )
 {
 	|ATTRIBUTE| = value;
 	return ;
@@ -441,8 +441,8 @@ inline void
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME| < T >::|CLASSNAME| ()
+template< class T >
+|CLASSNAME| < T >::|CLASSNAME|()
 {<CURSOR>
 }  /* ----------  end of constructor of template class |CLASSNAME|  ---------- */
 
@@ -452,8 +452,8 @@ template < class T >
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME|< T >::|CLASSNAME| ()
+template< class T >
+|CLASSNAME|< T >::|CLASSNAME|()
 {<CURSOR>
 }  /* ----------  end of constructor of template class |CLASSNAME|  ---------- */
 
@@ -462,8 +462,8 @@ template < class T >
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME|< T >::|CLASSNAME| ( const |CLASSNAME| &other )
+template< class T >
+|CLASSNAME|< T >::|CLASSNAME|( |CLASSNAME| const& other )
 {
 }  /* ----------  end of copy constructor of template class |CLASSNAME|  ---------- */
 
@@ -472,8 +472,8 @@ template < class T >
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME|< T >::|CLASSNAME| ( |CLASSNAME| &&other ) noexcept
+template< class T >
+|CLASSNAME|< T >::|CLASSNAME|( |CLASSNAME|&& other ) noexcept
 {
 }  /* ----------  end of move constructor of template class |CLASSNAME|  ---------- */
 
@@ -482,8 +482,8 @@ template < class T >
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME|< T >::~|CLASSNAME| () noexcept
+template< class T >
+|CLASSNAME|< T >::~|CLASSNAME|() noexcept
 {
 }  /* ----------  end of destructor of template class |CLASSNAME|  ---------- */
 
@@ -492,8 +492,8 @@ template < class T >
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME|< T >& |CLASSNAME|< T >::operator= ( const |CLASSNAME| &other )
+template< class T >
+|CLASSNAME|< T >& |CLASSNAME|< T >::operator=( |CLASSNAME| const& other )
 {
 	if ( this != &other ) {
 	}
@@ -505,8 +505,8 @@ template < class T >
  *
  *  <+DETAILED+>
  */
-template < class T >
-|CLASSNAME|< T >& |CLASSNAME|< T >::operator= ( |CLASSNAME| &&other ) noexcept
+template< class T >
+|CLASSNAME|< T >& |CLASSNAME|< T >::operator=( |CLASSNAME|&& other ) noexcept
 {
 	if ( this != &other ) {
 	}
@@ -517,8 +517,8 @@ template < class T >
 /**
  *  |DOX_CMD|brief  getter function for |?ATTRIBUTE|.
  */
-template < class T >
-inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE| (  ) const
+template< class T >
+inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE|(  ) const
 {
 	return |ATTRIBUTE|;
 }  /* -----  end of method |CLASSNAME|<T>::get_|ATTRIBUTE|  ----- */
@@ -526,8 +526,8 @@ inline  |?RETURNTYPE| |CLASSNAME|<T>::get_|ATTRIBUTE| (  ) const
 /**
  *  |DOX_CMD|brief  setter function for |ATTRIBUTE|.
  */
-template < class T >
-inline  void |CLASSNAME|<T>::set_|ATTRIBUTE| ( |RETURNTYPE| value )
+template< class T >
+inline  void |CLASSNAME|<T>::set_|ATTRIBUTE|( |RETURNTYPE| value )
 {
 	|ATTRIBUTE| = value;
 	return ;
